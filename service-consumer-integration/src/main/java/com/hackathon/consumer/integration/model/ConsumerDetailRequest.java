@@ -12,6 +12,8 @@ public class ConsumerDetailRequest implements Serializable {
 
 	private Long id;
 
+	private Long jobId;
+
 	private String username;
 
 	private String password;
@@ -26,6 +28,14 @@ public class ConsumerDetailRequest implements Serializable {
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public Long getJobId() {
+		return jobId;
+	}
+
+	public void setJobId(Long jobId) {
+		this.jobId = jobId;
 	}
 
 	public String getUsername() {

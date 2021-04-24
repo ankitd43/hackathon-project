@@ -1,12 +1,14 @@
 package com.hackathon.consumer.integration.service.auth;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.hackathon.consumer.integration.controller.ConsumerIntegrationController;
+import com.hackathon.consumer.integration.helper.exception.ConsumerIntegrationException;
+import com.hackathon.consumer.integration.model.ConsumerDetailRequest;
+import com.hackathon.consumer.integration.model.ConsumerDetailResponse;
 
 public interface ConsumerAuthService {
 
-//	private static final Logger logger = LoggerFactory.getLogger(ConsumerIntegrationController.class);
+	ConsumerDetailResponse login(ConsumerDetailRequest consumerDetailRequest) throws ConsumerIntegrationException;
+
+	boolean verifyToken(String token);
+
 
 }

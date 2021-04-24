@@ -31,6 +31,11 @@ public class TokenDetail implements Serializable {
 	@Column(name = "created_date")
 	private Date createdDate;
 
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "modified_date")
+	private Date modifiedDate;
+
+	
 	@Column(name = "is_expired")
 	private Boolean isExpired;
 
@@ -59,6 +64,14 @@ public class TokenDetail implements Serializable {
 
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
+	}
+
+	public Date getModifiedDate() {
+		return modifiedDate;
+	}
+
+	public void setModifiedDate(Date modifiedDate) {
+		this.modifiedDate = modifiedDate;
 	}
 
 	public Boolean getIsExpired() {

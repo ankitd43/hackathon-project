@@ -30,9 +30,16 @@ public class ConsumerDetail implements Serializable {
 
 	private String password;
 
+	@Column(name = "login_counter")
+	private Integer loginCounter;
+
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "created_date")
 	private Date createdDate;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "modified_date")
+	private Date modifiedDate;
 
 	@Column(name = "is_active")
 	private Boolean isActive;
@@ -61,8 +68,24 @@ public class ConsumerDetail implements Serializable {
 		this.password = password;
 	}
 
+	public Integer getLoginCounter() {
+		return loginCounter;
+	}
+
+	public void setLoginCounter(Integer loginCounter) {
+		this.loginCounter = loginCounter;
+	}
+
 	public Date getCreatedDate() {
 		return createdDate;
+	}
+
+	public Date getModifiedDate() {
+		return modifiedDate;
+	}
+
+	public void setModifiedDate(Date modifiedDate) {
+		this.modifiedDate = modifiedDate;
 	}
 
 	public void setCreatedDate(Date createdDate) {

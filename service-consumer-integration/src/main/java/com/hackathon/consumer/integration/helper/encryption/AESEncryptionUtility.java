@@ -44,7 +44,7 @@ public class AESEncryptionUtility {
 	// Need to check with .NET API as below method added as per SBI Guidlines
 	private static byte[] generateKey() {
 		try {
-			String hex = "56f1ac95f77n22ebc66e2359c13ea6611ebd5e2bd8fbe50e5b3ac2977a772302";			
+			String hex = "26f1ac75f77c22ebc66e2359c13ea9955ebd5e2bd7fbe50e5b3ac2977a772302";			
 			byte[] bytes = new byte[hex.length() / 2];
 			for (int i = 0; i < hex.length() / 2; i++) {
 				bytes[i] = (byte) Integer.parseInt(hex.substring(i * 2, i * 2 + 2), 16);

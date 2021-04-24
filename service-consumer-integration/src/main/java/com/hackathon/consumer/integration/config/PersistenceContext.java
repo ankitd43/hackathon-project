@@ -52,7 +52,7 @@ public class PersistenceContext {
     private static final String PROPERTY_NAME_HIBERNATE_SHOW_SQL = "hibernate.show_sql";
     private static final String PROPERTY_NAME_HIBERNATE_LAZY_LOAD = "hibernate.enable_lazy_load_no_trans";
 
-    private static final String PROPERTY_PACKAGES_TO_SCAN = "com.hackathon.consumer.integration.repository";
+    private static final String PROPERTY_PACKAGES_TO_SCAN = "com.hackathon.consumer.integration.domain";
 
     @Autowired
     private Environment environment;
