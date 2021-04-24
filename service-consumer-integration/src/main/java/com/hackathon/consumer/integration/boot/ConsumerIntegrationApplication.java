@@ -21,6 +21,6 @@ public class ConsumerIntegrationApplication {
 		 DispatcherServlet dispatcherServlet = (DispatcherServlet)ctx.getBean("dispatcherServlet");
 		 dispatcherServlet.setThrowExceptionIfNoHandlerFound(true);
 	        
-		 System.out.println("Enter in Sidbi");
+		 System.out.println("Enter in Cumsumer");
 	}
 }
