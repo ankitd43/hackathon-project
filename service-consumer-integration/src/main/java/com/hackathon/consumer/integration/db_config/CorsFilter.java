@@ -24,7 +24,7 @@ public class CorsFilter implements Filter {
 		
 		
 		String method = request.getMethod();
-		if (! HttpMethod.GET.matches(method)  && !HttpMethod.POST.matches(method)  ) {
+		if (!HttpMethod.GET.matches(method)  && !HttpMethod.POST.matches(method)  ) {
 			
 		} else {
 			

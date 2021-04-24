@@ -30,7 +30,7 @@ public class ConsumerJobDetail implements Serializable {
 	@Column(name = "order_date")
 	private Date orderDate;
 
-	@Column(name = "order_Status")
+	@Column(name = "job_Status")
 	private String jobStatus;
 
 	@Column(name = "file_type")
